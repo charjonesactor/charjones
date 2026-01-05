@@ -68,8 +68,8 @@ nav a {
    width: 480px;
   max-width: 90%;
   margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 46%;
+  transform: translateY(-46%);
   border-radius: 24px;
   overflow: hidden;
 }
