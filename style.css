@@ -13,9 +13,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
 
 body {
-  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  background: #dff6f0; /* light seafoam */
-  color: #111; /* main text */
+   font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, #dff6f0 0%, #b9e5dc 50%, #f7f7f7 100%);
+  color: #111;
   line-height: 1.6;
   cursor: url('assets/images/favicon.png'), auto; /* custom cursor */
 }
