@@ -1,22 +1,28 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
+/* =========================
+   FONTS & BASE
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  background: #f7f7f7;
-  color: #111;
+  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: #dff6f0; /* light seafoam */
+  color: #111; /* main text */
   line-height: 1.6;
-  cursor: url('assets/images/favicon.png'), auto;
-
-
+  cursor: url('assets/images/favicon.png'), auto; /* custom cursor */
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   height: 90vh;
   position: relative;
@@ -26,17 +32,16 @@ body {
   transition: background-image 0.8s ease-in-out;
 }
 
-/* On hover, swap to second image */
 .hero:hover {
   background-image: url("images/hero2.jpg");
 }
 
-/* Optional: dark overlay for text readability */
+/* Dark overlay for readability */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .hero-content {
@@ -51,6 +56,7 @@ body {
 }
 
 .hero h1 {
+  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   letter-spacing: 2px;
 }
@@ -67,8 +73,9 @@ body {
   }
 }
 
-
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -79,18 +86,39 @@ body {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
+  color: #111;
 }
 
-/* HEADSHOTS */
-/* Featured Headshot */
+/* =========================
+   BIO SECTION
+========================= */
+.bio-section {
+  background: #aee0d6; /* slightly darker seafoam */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.bio-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #111;
+}
+
+/* =========================
+   HEADSHOTS
+========================= */
 .featured {
   position: relative;
   margin: 0 auto 2rem;
-  max-width: 350px; /* Main photo size */
-  aspect-ratio: 4 / 5; /* Keep all photos same ratio */
+  max-width: 350px;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .featured img {
@@ -100,13 +128,11 @@ body {
   object-fit: cover;
 }
 
-/* Show first by default or targeted */
 .featured img:first-child,
 .featured img:target {
   display: block;
 }
 
-/* Thumbnails */
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
@@ -117,10 +143,10 @@ body {
 .thumb {
   position: relative;
   width: 80px;
-  aspect-ratio: 4 / 5; /* same as main */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .thumb img {
@@ -130,7 +156,6 @@ body {
   display: block;
 }
 
-/* Uniform overlay icon */
 .thumb span {
   position: absolute;
   inset: 0;
@@ -138,7 +163,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.3);
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s;
@@ -148,7 +173,7 @@ body {
   opacity: 1;
 }
 
-/* Mobile tweaks */
+/* Mobile headshots */
 @media (max-width: 480px) {
   .featured {
     max-width: 90%;
@@ -158,8 +183,9 @@ body {
   }
 }
 
-
-/* VIDEO */
+/* =========================
+   VIDEO
+========================= */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -175,16 +201,17 @@ body {
   height: 100%;
 }
 
-/* RESUME */
+/* =========================
+   RESUME BUTTON
+========================= */
 .resume-link {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
+  display: inline-block;
   padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
   border: 1px solid #111;
   text-decoration: none;
   color: #111;
-  transition: background 0.3s, color 0.3s;
+  transition: all 0.3s;
 }
 
 .resume-link:hover {
@@ -192,74 +219,12 @@ body {
   color: #fff;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #666;
-}
-
-/* DESKTOP */
-@media (min-width: 768px) {
-  .hero h1 {
-    font-size: 4rem;
-  }
-}
-h1, h2 {
-  font-family: 'Press Start 2P', sans-serif;
-}
-
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* BASE & BODY */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  background: #1e1e1e;       /* Dark cinematic background */
-  color: #fdfcf8;            /* Warm off-white text */
-  line-height: 1.6;
-  cursor: url('assets/images/cursor.png'), auto; /* Custom cursor */
-}
-
-/* SECTION HEADINGS */
-.section h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  color: #fdfcf8;
-}
-
-/* BIO */
-.bio-section {
-  background: #2a2a2a;      /* Slightly lighter dark background */
-  padding: 3rem 1.5rem;
-  text-align: center;
-  border-radius: 6px;
-  margin: 2rem auto;
-  max-width: 900px;
-}
-
-.bio-section p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #fdfcf8;
-}
-
-/* Buttons / Resume Links */
-.resume-link {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  margin: 1rem 0;
-  border: 1px solid #e0a159; 
-  color: #fdfcf8;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.resume-link:hover {
-  background: #e0a159;
-  color: #1e1e1e;
+  color: #555;
 }
