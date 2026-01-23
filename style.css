@@ -213,3 +213,53 @@ h1, h2 {
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* BASE & BODY */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: #1e1e1e;       /* Dark cinematic background */
+  color: #fdfcf8;            /* Warm off-white text */
+  line-height: 1.6;
+  cursor: url('assets/images/cursor.png'), auto; /* Custom cursor */
+}
+
+/* SECTION HEADINGS */
+.section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #fdfcf8;
+}
+
+/* BIO */
+.bio-section {
+  background: #2a2a2a;      /* Slightly lighter dark background */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.bio-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fdfcf8;
+}
+
+/* Buttons / Resume Links */
+.resume-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid #e0a159; 
+  color: #fdfcf8;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.resume-link:hover {
+  background: #e0a159;
+  color: #1e1e1e;
+}
