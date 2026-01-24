@@ -13,12 +13,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
 
 body {
-  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+   font-family: 'Lora', serif;
+  color: #1a1a1a;
   background: 
     linear-gradient(rgba(223,246,240,0.7), rgba(247,247,247,0.7)),
     url('assets/images/silk2.png') no-repeat center center fixed;
   background-size: cover;
-  color: #111;
   line-height: 1.6;
   cursor: url('assets/images/favicon.png'), auto; /* custom cursor */
 }
@@ -241,18 +241,11 @@ footer {
 }
 
 .buttons a {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: #2aa893; /* seafoam accent */
+  background: linear-gradient(45deg, #bfa77f, #e0a159);
   color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.3s;
+}
+.buttons a:hover {
+  background: linear-gradient(45deg, #e0a159, #bfa77f);
 }
 
-.buttons a:hover {
-  background: #1f7868;
-  transform: translateY(-2px);
-}
 
