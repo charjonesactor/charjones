@@ -20,18 +20,19 @@ body {
 /* HEADINGS */
 h1, h2 {
   font-family: 'Cinzel', serif;
-  color: #3a2f2f; /* deep warm chocolate */
   text-align: center;
 }
 
 h1 {
   font-size: 3rem;
   letter-spacing: 1px;
+  color: white;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: #3a2f2f;
 }
 
 /* HERO */
