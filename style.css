@@ -200,6 +200,21 @@ h2 {
 }
 
 /* RESUME / LINKS BUTTONS */
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.resume-button:hover {
+  background: black;
+  color: white;
+}
+
 .resume-section {
   text-align: center;
   padding: 80px 20px;
