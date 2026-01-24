@@ -1,31 +1,40 @@
-/* =========================
-   RESET
-========================= */
+/* GOOGLE FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap');
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   FONTS & BASE
-========================= */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
-
+/* BASE BODY */
 body {
-   font-family: 'Lora', serif;
+  font-family: 'Lora', serif;
+  background: linear-gradient(180deg, #fdf6e3, #f7f2eb); /* soft cream gradient */
   color: #1a1a1a;
-  background: 
-    linear-gradient(rgba(223,246,240,0.7), rgba(247,247,247,0.7)),
-    url('assets/images/silk2.png') no-repeat center center fixed;
-  background-size: cover;
   line-height: 1.6;
-  cursor: url('assets/images/favicon.png'), auto; /* custom cursor */
+  cursor: url('assets/images/favicon.png'), auto;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HEADINGS */
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #3a2f2f; /* deep warm chocolate */
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* HERO */
 .hero {
   height: 90vh;
   position: relative;
@@ -39,12 +48,11 @@ body {
   background-image: url("images/hero2.jpg");
 }
 
-/* Dark overlay for readability */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
@@ -59,26 +67,16 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  letter-spacing: 2px;
+  font-size: 3.5rem;
 }
 
 .hero p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
+  font-family: 'Lora', serif;
 }
 
-/* Desktop tweak */
-@media (min-width: 768px) {
-  .hero h1 {
-    font-size: 4rem;
-  }
-}
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -86,38 +84,32 @@ body {
 }
 
 .section h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  color: #111;
+  color: #3a2f2f;
 }
 
-/* =========================
-   BIO SECTION
-========================= */
+/* BIO */
 .bio-section {
-  background: #aee0d6; /* slightly darker seafoam */
+  background: #fff7f0;
   padding: 3rem 1.5rem;
   text-align: center;
   border-radius: 8px;
   margin: 2rem auto;
   max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .bio-section p {
   font-size: 1.1rem;
   max-width: 700px;
-  margin: 0 auto;
-  color: #111;
+  margin: 0.75rem auto;
+  color: #1a1a1a;
 }
 
-/* =========================
-   HEADSHOTS
-========================= */
+/* HEADSHOTS */
 .featured {
   position: relative;
   margin: 0 auto 2rem;
-  max-width: 350px;
+  max-width: 300px; /* slightly smaller main image */
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 6px;
@@ -136,6 +128,7 @@ body {
   display: block;
 }
 
+/* Thumbnails */
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +159,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.35);
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s;
@@ -176,19 +169,7 @@ body {
   opacity: 1;
 }
 
-/* Mobile headshots */
-@media (max-width: 480px) {
-  .featured {
-    max-width: 90%;
-  }
-  .thumb {
-    width: 60px;
-  }
-}
-
-/* =========================
-   VIDEO
-========================= */
+/* VIDEO */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -204,34 +185,7 @@ body {
   height: 100%;
 }
 
-/* =========================
-   RESUME BUTTON
-========================= */
-.resume-link {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  margin: 1rem 0;
-  border: 1px solid #111;
-  text-decoration: none;
-  color: #111;
-  transition: all 0.3s;
-}
-
-.resume-link:hover {
-  background: #111;
-  color: #fff;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
+/* RESUME / LINKS BUTTONS */
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -241,11 +195,47 @@ footer {
 }
 
 .buttons a {
-  background: linear-gradient(45deg, #bfa77f, #e0a159);
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(45deg, #bfa77f, #e0a159); /* warm metallic gradient */
   color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
 }
+
 .buttons a:hover {
   background: linear-gradient(45deg, #e0a159, #bfa77f);
+  transform: translateY(-2px);
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
 
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .featured {
+    max-width: 90%;
+  }
+  .thumb {
+    width: 60px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
