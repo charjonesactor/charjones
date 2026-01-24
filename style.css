@@ -252,3 +252,15 @@ footer {
     font-size: 4rem;
   }
 }
+.nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white; /* or dark if navbar is light */
+}
