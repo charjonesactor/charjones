@@ -42,10 +42,19 @@ h2 {
   background-size: cover;
   background-position: center;
   transition: background-image 0.8s ease-in-out;
+  position: relative;
+  color: white;
 }
 
 .hero:hover {
   background-image: url("images/hero2.jpg");
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* adjust as needed */
 }
 
 .hero::after {
@@ -64,7 +73,11 @@ h2 {
   align-items: center;
   text-align: center;
   color: #fff;
+  z-index: 1;
 }
+
+
+
 
 .hero h1 {
   font-size: 3.5rem;
