@@ -200,6 +200,26 @@ h2 {
 }
 
 /* RESUME / LINKS BUTTONS */
+.resume-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.resume-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.resume-images img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
