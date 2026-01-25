@@ -399,3 +399,61 @@ footer {
     background: rgba(0,0,0,0.4);
   }
 }
+
+.work-section {
+  padding: 80px 20px;
+  text-align: center; /* center headings and text */
+  background-color: #f8f8f8; /* optional, can keep white too */
+}
+
+.work-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.work-category {
+  margin-bottom: 40px;
+}
+
+.work-category h3 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.work-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px; /* keeps the list from being too wide */
+}
+
+.work-category ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 8p
+}
+.work-category:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .work-section h2 {
+    font-size: 2rem;
+  }
+
+  .work-category h3 {
+    font-size: 1.5rem;
+  }
+
+  .work-category ul {
+    max-width: 100%;
+  }
+}
+.work-category ul li:hover {
+  color: #555;
+  font-weight: 600;
+}
