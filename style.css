@@ -310,3 +310,144 @@ footer {
 @media (min-width: 768px) {
   .hero h1 { font-size: 4rem; }
 }
+
+/* WORK PAGE */
+.work-page {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-page h1 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: #3a2f2f;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Work categories */
+.work-category {
+  margin-bottom: 80px;
+}
+
+.work-category h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4a3a3a;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Individual card */
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Hover overlay text */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* BTS PAGE */
+.bts-page {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bts-page h1 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: #3a2f2f;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.bts-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bts-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.bts-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Overlay text on hover */
+.bts-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-transform: uppercase;
+}
+
+.bts-item:hover .bts-overlay {
+  opacity: 1;
+}
+
