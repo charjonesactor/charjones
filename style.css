@@ -10,7 +10,7 @@
 
 /* BASE BODY */
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Syne', sans-serif;
   background: linear-gradient(180deg, #fdf6e3, #f7f2eb); /* soft cream gradient */
   color: #1a1a1a;
   line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 
 /* HEADINGS */
 h1, h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Syne', sans-serif;
   text-align: center;
 }
 
