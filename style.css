@@ -457,3 +457,84 @@ footer {
   color: #555;
   font-weight: 600;
 }
+
+/* Work page overall */
+.work-page {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-page h1 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.work-category {
+  margin-bottom: 80px;
+}
+
+.work-category h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Individual card */
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Hover overlay text */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .work-page h1 {
+    font-size: 2.2rem;
+  }
+  .work-category h2 {
+    font-size: 1.5rem;
+  }
+}
+
