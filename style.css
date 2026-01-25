@@ -317,3 +317,39 @@ footer {
 .hero-nav a:hover {
   opacity: 0.7;
 }
+
+.resume-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.resume-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.resume-images img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  border: 2px solid #000;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.resume-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
