@@ -194,6 +194,30 @@
   <p>Coded by Char Jones (Github Raw Code)</p>
 </footer>
 
+
+  <script>
+  const sections = document.querySelectorAll('.work-category, .bts-section');
+  const navLinks = document.querySelectorAll('.work-jump-nav a');
+
+  window.addEventListener('scroll', () => {
+    let currentSectionId = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100; // offset for nav height
+      if (scrollY >= sectionTop) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + currentSectionId) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
 
