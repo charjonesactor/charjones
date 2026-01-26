@@ -381,10 +381,11 @@ footer {
 }
 
 /* Card grid */
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 /* Individual card */
@@ -395,13 +396,19 @@ footer {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* THIS is the magic */
 }
 
+
 .card img {
+  transition: transform 0.4s ease;
   width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills card, crops edges */
+  object-position: center;
   display: block;
-  height: auto;
-  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -430,6 +437,19 @@ footer {
 .card:hover .card-overlay {
   opacity: 1;
 }
+
+.card:hover img {
+  transform: scale(1.06);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  color: white;
+}
+
 
 /* BTS PAGE */
 .bts-page {
