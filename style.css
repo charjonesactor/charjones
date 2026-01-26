@@ -610,87 +610,89 @@ footer {
     background: rgba(0, 0, 0, 0.7);
   }
 
-  /* WORK JUMP NAV */
+
 
 /* ----------------------------
    WORK JUMP NAVIGATION
 ---------------------------- */
 
-/*------------- WORK JUMP NAV -------------*/
-.work-jump-nav a.active {
-  background: #fff;
-  color: #000;
-  border-color: rgba(255,255,255,0.9);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-  transform: translateY(-2px);
-}
+/* ----------------------------- */
+/* WORK JUMP NAV - CLEAN VERSION */
+/* ----------------------------- */
 
-/* Container */
+/* DESKTOP */
 .work-jump-nav {
   display: flex;
-  justify-content: space-between; /* evenly spread */
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  justify-content: space-evenly; /* spreads buttons evenly across the container */
+  flex-wrap: wrap;               /* allows wrapping if window is smaller */
+  gap: 1.5rem;                   /* space between buttons */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
   width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Buttons */
 .work-jump-nav a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: linear-gradient(45deg, #ff9f80, #fcb069);
+  background: linear-gradient(45deg, #fcb069, #ff9f80);
   color: #fff;
-  text-decoration: none !important;
-  font-size: 0.90rem;
+  text-decoration: none;
+  font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.25s ease;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* Hover style like nav */
+/* Active / current section */
+.work-jump-nav a.active {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+/* Hover state */
 .work-jump-nav a:hover {
   background: #fff;
   color: #000;
-  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.30);
 }
 
-/* Decorative line under navigation */
-.work-jump-nav::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  margin: 1rem auto 0;
-  background: rgba(255,255,255,0.2);
-}
-
-/*------------- MOBILE ADJUSTMENTS -------------*/
+/* ----------------------------- */
+/* MOBILE (<=768px) */
 @media (max-width: 768px) {
   .work-jump-nav {
-    justify-content: center;
+    justify-content: center; /* keep buttons centered */
     gap: 0.75rem;
+    flex-wrap: wrap;         /* allow 2–3 per line if needed */
+    padding: 1rem;
+    background: rgba(0,0,0,0.1); /* subtle bg for legibility */
+    border-radius: 12px;
   }
 
   .work-jump-nav a {
-    min-width: 120px;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 0, 0, 0.65); /* darker bg for legibility */
+    min-width: 120px;            /* keeps buttons readable */
+    padding: 0.45rem 0.9rem;
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     box-shadow: none;
+    transform: none;
   }
 
-  .work-jump-nav a:hover {
+  .work-jump-nav a:hover,
+  .work-jump-nav a.active {
     background: rgba(255,255,255,0.9);
     color: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   }
 }
 
