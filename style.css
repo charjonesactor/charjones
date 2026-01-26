@@ -618,6 +618,7 @@ footer {
   align-items: center;
   padding: 0.45rem 0.9rem;
   border-radius: 999px;
+  color:
 
   font-size: 0.8rem;
   letter-spacing: 0.08em;
@@ -690,11 +691,15 @@ html {
   text-transform: uppercase;
   opacity: 0.85;
   transition: all 0.25s ease;
+  background: linear-gradient(45deg, #ff9f80, #fcb069);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .work-jump-nav a:hover {
-  background: currentColor;
-  color: #000;
+  background: #fff;
+  color: linear-gradient(45deg, #ff9f80, #fcb069);
 }
 
 @media (max-width: 768px) {
