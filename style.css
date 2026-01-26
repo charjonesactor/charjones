@@ -769,4 +769,20 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .work-jump-nav {
+    justify-content: center; /* keep centered on mobile */
+    gap: 0.75rem;
+    flex-wrap: wrap; /* allows 2–3 per line if needed */
+  }
+
+  .work-jump-nav a {
+    min-width: 120px; /* optional: keeps buttons from shrinking too much */
+    background: rgba(0, 0, 0, 0.6); /* add bg for legibility */
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+  }
+}
+
+
 
