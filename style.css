@@ -716,3 +716,19 @@ html {
     background: rgba(255,255,255,0.08);
   }
 }
+
+.work-jump-nav::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: 1.5rem auto 0;
+  background: rgba(255,255,255,0.2);
+}
+@media (max-width: 768px) {
+  .work-jump-nav {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
