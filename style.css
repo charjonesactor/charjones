@@ -611,19 +611,18 @@ footer {
   }
 
   /* WORK JUMP NAV */
-  .work-jump-nav {
-    gap: 0.75rem;
-  }
 
 .work-jump-nav {
   display: flex;
-  justify-content: space-around; /* spreads them evenly across the width */
-  flex-wrap: wrap; /* allows wrapping if screen is smaller */
-  gap: 1rem; /* space between buttons */
+  justify-content: space-around; /* spreads buttons evenly across the container */
+  flex-wrap: wrap;               /* allows buttons to wrap if needed */
+  gap: 1rem;                     /* space between buttons */
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
+  width: 100%;                   /* ensures full container width */
 }
+
 
 
 /* WORK JUMP NAV (DESKTOP + MOBILE) */
@@ -648,6 +647,22 @@ footer {
   border: 1px solid rgba(255,255,255,0.35);
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  .work-jump-nav {
+    justify-content: center; /* center the buttons */
+    flex-wrap: wrap;         /* allow wrapping to multiple lines */
+    gap: 0.75rem;
+  }
+
+  .work-jump-nav a {
+    min-width: 120px;           /* keeps buttons a readable size */
+    background: rgba(0, 0, 0, 0.6); /* makes text legible over images */
+    padding: 0.45rem 0.9rem;
+    text-align: center;
+  }
+}
+
 
 
 .work-jump-nav a:hover {
