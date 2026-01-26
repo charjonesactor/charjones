@@ -671,7 +671,7 @@ html {
 
 @media (max-width: 768px) {
   .work-nav {
-    background: rgba(0, 0, 0, 0.9); /* or your site bg color */
+    background: linear-gradient(45deg, #fcb069, #ff9f80);/* or your site bg color */
     position: sticky;
     top: 0;
     z-index: 1000;
