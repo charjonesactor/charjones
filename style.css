@@ -424,6 +424,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
+  justify-content: center;
 }
 
 /* Individual card */
@@ -502,6 +503,10 @@ footer {
   margin-bottom: 60px;
   color: #3a2f2f;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bts-section {
+  padding: 0 1.5rem;
 }
 
 .bts-grid {
