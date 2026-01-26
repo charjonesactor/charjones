@@ -508,6 +508,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bts-item {
