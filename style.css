@@ -573,3 +573,60 @@ footer {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    padding: 1rem;
+  }
+
+  .hero-nav a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .card-overlay,
+  .bts-overlay {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 768px) {
+  .card-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.work-jump-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.work-jump-nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.work-jump-nav a:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .work-jump-nav {
+    gap: 0.75rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.work-category,
+.bts-section {
+  scroll-margin-top: 80px;
+}
+
