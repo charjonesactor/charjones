@@ -629,7 +629,7 @@ footer {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  background: transparent;
+  background: linear-gradient(45deg, #fcb069, #ff9f80);
   border: 1px solid rgba(255,255,255,0.35);
   color: inherit;
 
@@ -738,7 +738,7 @@ html {
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.35);
   color: inherit;
-  background: transparent;
+  background: linear-gradient(45deg, #fcb069, #ff9f80);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
