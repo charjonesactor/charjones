@@ -616,15 +616,16 @@ footer {
    WORK JUMP NAVIGATION
 ---------------------------- */
 
+/*------------- WORK JUMP NAV -------------*/
+
 /* Container */
 .work-jump-nav {
   display: flex;
-  justify-content: space-around; /* spread buttons across width on desktop */
+  justify-content: space-between; /* evenly spread */
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   width: 100%;
 }
 
@@ -633,54 +634,51 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  background: linear-gradient(45deg, #fcb069, #ff9f80);
+  background: linear-gradient(45deg, #ff9f80, #fcb069);
   color: #fff;
   text-decoration: none !important;
-  font-size: 0.85rem;
+  font-size: 0.90rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* Hover style like nav */
 .work-jump-nav a:hover {
   background: #fff;
   color: #000;
+  border-color: rgba(255, 255, 255, 0.9);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.30);
 }
 
-/* Decorative line under nav */
+/* Decorative line under navigation */
 .work-jump-nav::after {
   content: "";
   display: block;
   width: 60px;
   height: 1px;
-  margin: 1.5rem auto 0;
+  margin: 1rem auto 0;
   background: rgba(255,255,255,0.2);
 }
 
-/* ----------------------------
-   MOBILE ADJUSTMENTS
----------------------------- */
+/*------------- MOBILE ADJUSTMENTS -------------*/
 @media (max-width: 768px) {
   .work-jump-nav {
-    justify-content: center;  /* center buttons on mobile */
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.75rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1rem;
   }
 
   .work-jump-nav a {
-    min-width: 120px; /* keeps buttons readable */
-    padding: 0.45rem 0.9rem;
-    background: rgba(0, 0, 0, 0.6); /* ensures legibility over images */
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.65); /* darker bg for legibility */
     color: #fff;
-    box-shadow: none; /* keep mobile flat */
+    box-shadow: none;
   }
 
   .work-jump-nav a:hover {
@@ -688,7 +686,6 @@ footer {
     color: #000;
   }
 }
-
 
 
 /* SMOOTH SCROLL */
