@@ -7,6 +7,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Syne', sans-serif;
+}
+
+.hero-name {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
 /* VIDEO SECTIONS */
 .video-section {
   padding: 80px 20px;
@@ -51,7 +66,7 @@
 
 /* BASE BODY */
 body {
-  font-family: 'Syne', sans-serif;
+  /* font-family: 'Syne', sans-serif; */
   background: linear-gradient(135deg, #f0e5d8, #d3c0b0); /* warm cinematic gradient */
   color: #1a1a1a;
   line-height: 1.6;
@@ -61,7 +76,7 @@ body {
 
 /* HEADINGS */
 h1, h2 {
-  font-family: 'Syne', sans-serif;
+  /* font-family: 'Syne', sans-serif; */
   text-align: center;
   
 }
