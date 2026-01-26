@@ -647,15 +647,12 @@ footer {
 }
 @media (max-width: 768px) {
   .work-jump-nav a {
-    background: rgba(255,255,255,0.08);
+    background: linear-gradient(45deg, #fcb069, #ff9f80);
+    color: #fff;
     opacity: 1;
   }
 }
-.work-jump-nav a:active,
-.work-jump-nav a:focus {
-  background: rgba(255,255,255,0.9);
-  color: #000;
-}
+
 .work-jump-nav a {
   text-decoration: none !important;
 }
