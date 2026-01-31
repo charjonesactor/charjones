@@ -25,6 +25,8 @@ h1, h2 {
 .hero-name {
   font-family: 'IM Fell English', serif;
   letter-spacing: 0.04em;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.4);
+
 }
 .work-page h1,
 .work-page h2 {
@@ -102,8 +104,13 @@ h1, h2 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.4);
 }
 
+.hero h1,
+.hero p {
+  text-shadow: 0 4px 18px rgba(0,0,0,0.4);
+}
 
 h1 {
   font-size: 3rem;
