@@ -552,6 +552,7 @@ footer {
 
 .bts-section {
   padding: 0 1.5rem;
+  cursor: default !important;
 }
 
 .bts-grid {
