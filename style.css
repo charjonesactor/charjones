@@ -38,6 +38,7 @@
   right: 30px;
   font-size: 2rem;
   cursor: url("assets/images/faviconsmall.png"), auto;
+  cursor: url("assets/images/faviconsmall.png") 16 8, pointer;
 }
 
 
@@ -122,6 +123,7 @@ body {
   color: #1a1a1a;
   line-height: 1.6;
   cursor: url('assets/images/faviconsmall.png')16 16, auto;
+  cursor: url("assets/images/faviconsmall.png") 16 8, pointer;
   transition: background 0.5s ease;
 }
 
@@ -477,6 +479,7 @@ footer {
   position: relative;
   overflow: hidden;
   cursor: url("assets/images/favicon.png"), auto;
+  cursor: url("assets/images/faviconsmall.png") 16 8, pointer;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
