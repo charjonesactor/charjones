@@ -121,7 +121,7 @@ body {
   background: linear-gradient(135deg, #f0e5d8, #d3c0b0); /* warm cinematic gradient */
   color: #1a1a1a;
   line-height: 1.6;
-  cursor: url('assets/images/favicon.png'), auto;
+  cursor: url('assets/images/faviconsmall.png')16 16, auto;
   transition: background 0.5s ease;
 }
 
