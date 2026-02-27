@@ -37,7 +37,7 @@
   top: 20px;
   right: 30px;
   font-size: 2rem;
-  cursor: url("assets/images/favicon.png"), auto;
+  cursor: url("assets/images/faviconsmall.png"), auto;
 }
 
 
@@ -165,7 +165,7 @@ h2 {
 .hero {
   height: 90vh;
   position: relative;
-  background-image: url("images/upaway.png");
+  background-image: url("images/crop.png");
   background-size: cover;
   background-position: center;
   transition: background-image 0.8s ease-in-out;
