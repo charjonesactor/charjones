@@ -165,7 +165,7 @@ h2 {
 .hero {
   height: 90vh;
   position: relative;
-  background-image: url("images/hero1.jpg");
+  background-image: url("images/upaway.png");
   background-size: cover;
   background-position: center;
   transition: background-image 0.8s ease-in-out;
@@ -173,7 +173,7 @@ h2 {
 }
 
 .hero:hover {
-  background-image: url("images/hero2.jpg");
+  background-image: url("images/clips.png");
 }
 
 .hero::before,
